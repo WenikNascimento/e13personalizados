@@ -1,0 +1,302 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    <!-- ***** Breadcrumb Area Start ***** -->
+    <div class="breadcrumb-area">
+        <div class="container h-100">
+            <div class="row h-100 align-items-end">
+                <div class="col-12">
+                    <div class="breadcumb--con">
+                        <h2 class="title">Loja</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{{ url_for('home') }}"><i class="fa fa-home"></i>Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Loja</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Curve -->
+        <div class="breadcrumb-bg-curve">
+            <img src="{{ url_for('static',filename='/img/core-img/curve-5.png') }}" alt="">
+        </div>
+    </div>
+    <!-- ***** Breadcrumb Area End ***** -->
+
+    <!-- ****** Gallery Area Start ****** -->
+    <section class="uza-portfolio-area section-padding-80">
+
+        <!-- Portfolio Menu -->
+        <div class="portfolio-menu text-center mb-80">
+            <h1>Todos os Itens da Loja</h1>
+            <h5 class="breadcrumb-item active">Imagens meramente ilustrativas</h5>
+        </div>
+<br>
+        <div class="container-fluid">
+            <div class="row uza-portfolio">
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/camisa_branca.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Camisa</h4>
+                            <p>Camisas para todas as idades e gêneros.</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="ItensLoja.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social market-analytics">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/banner_branco.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Banner</h4>
+                            <p>Banners para qualquer tipo de lugar.</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="Lbanner.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/caneca_branca.webp') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Caneca</h4>
+                            <p>Canecas personalizada com sua coisa favorita.</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="Lcaneca.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item ux-ui-design">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/toalha_branca.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Toalha</h4>
+                            <p>Toalha personalizada a seu gosto.</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="Ltoalha.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item market-analytics">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/Travesseiro_branco.webp') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Travesseiro</h4>
+                            <p>Durma bem com seu personagem favorito</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="Ltravesseiro.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item ux-ui-design">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/chaveiro_Branco.webp') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Chaveiro</h4>
+                            <p>Leve o que voce mais gosta no seu bolso.</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="Lchaveiro.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item ux-ui-design">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/caneta_branca.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Caneta</h4>
+                            <p>Escreva com sua caneta totalmente unica.</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="Lcaneta.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social market-analytics">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/copo_branco.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Copo</h4>
+                            <p>Copo totalmente pesonalizado e unico.</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="Lcopo.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social market-analytics">
+                    <div class="single-portfolio-slide">
+                        <img src=" {{ url_for('static',filename='/img/bg-img/mascara_branca.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Máscara</h4>
+                            <p>Saia nessa pandemia com estilo.</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="Lmascara.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social market-analytics">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/moldura_branca.webp') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Moldura</h4>
+                            <p>Marque  o seu momento preferito com uma moldura de foto unica.</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="Lmoldura.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social ux-ui-design">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/garrafa-Branca.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Garrafa</h4>
+                            <p>Hidrate-se com sua garrafa personalizada.</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="Lgarrafa.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social ux-ui-design">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/lancheira_branca.png') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Lancheira</h4>
+                            <p>Mostre seu estilo na hora do lanche.</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="Llancheira.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social ux-ui-design">
+                  <div class="single-portfolio-slide">
+                      <img src="{{ url_for('static',filename='/img/bg-img/chinelo_branco.png') }}" alt="">
+                       <!-- Overlay Effect -->
+                       <div class="overlay-effect">
+                             <h4>Chinelo</h4>
+                              <p>Curta o Verão da melhor maneira.</p>
+                           </div>
+                         <!-- View More -->
+                          <div class="view-more-btn">
+                               <a href="Lchinelo.html"><i class="arrow_right"></i></a>
+                         </div>
+                      </div>
+                   </div>
+
+               <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social ux-ui-design">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='./img/bg-img/cofre_branco.png') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Cofre</h4>
+                            <p>Guarde suas coisas com segurança e estilo.</p>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="Lcofre.html"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- Single Portfolio Item -->
+               <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social ux-ui-design">
+                <div class="single-portfolio-slide">
+                    <img src="{{ url_for('static',filename='/img/bg-img/relogio_branco.png') }}" alt="">
+                    <!-- Overlay Effect -->
+                    <div class="overlay-effect">
+                        <h4>Relógio</h4>
+                        <p>Decore o ambiente funcionalidade.</p>
+                    </div>
+                    <!-- View More -->
+                    <div class="view-more-btn">
+                        <a href="Lrelogio.html"><i class="arrow_right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+               <!-- Single Portfolio Item -->
+               <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social ux-ui-design">
+                <div class="single-portfolio-slide">
+                    <img src="{{ url_for('static',filename='img/bg-img/taca_branco.png') }}" alt="">
+                    <!-- Overlay Effect -->
+                    <div class="overlay-effect">
+                        <h4>Taça</h4>
+                        <p>Brinde da sua maneira.</p>
+                    </div>
+                    <!-- View More -->
+                    <div class="view-more-btn">
+                        <a href="Ltaca.html"><i class="arrow_right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+</body>
+
+</html>
+{% endblock %}

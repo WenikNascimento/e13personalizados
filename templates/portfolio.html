@@ -1,0 +1,171 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <!-- ***** Breadcrumb Area Start ***** -->
+    <div class="breadcrumb-area">
+        <div class="container h-100">
+            <div class="row h-100 align-items-end">
+                <div class="col-12">
+                    <div class="breadcumb--con">
+                        <h2 class="title">Portifólio</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{{ url_for('home') }}"><i class="fa fa-home"></i> Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Portifólio</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Curve -->
+        <div class="breadcrumb-bg-curve">
+            <img src="{{ url_for('static',filename='/img/core-img/curve-5.png') }}" alt="">
+        </div>
+    </div>
+    <!-- ***** Breadcrumb Area End ***** -->
+
+    <!-- ****** Gallery Area Start ****** -->
+    <section class="uza-portfolio-area section-padding-80">
+
+        <!-- Portfolio Menu -->
+        <div class="portfolio-menu text-center mb-80">
+            <button class="btn active" data-filter="*">Todo Portifólio</button>
+            <button class="btn" data-filter=".ux-ui-design">Canecas e Copos</button>
+            <button class="btn" data-filter=".market-analytics">Roupas e Acessórios</button>
+            <button class="btn" data-filter=".marketing-social">Diversos</button>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row uza-portfolio">
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/3.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Topper de Bolo</h4>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="{{ url_for('loja') }}"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/10.png') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Placa</h4>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="{{ url_for('loja') }}"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item ux-ui-design">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/5.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Copos</h4>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="{{ url_for('loja') }}"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item market-analytics">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/6.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Roupas Infantis</h4>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="{{ url_for('loja') }}"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item ux-ui-design">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/8.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Canecas</h4>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="{{ url_for('loja') }}"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item market-analytics ">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/4.png') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Camiseta</h4>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="{{ url_for('loja') }}"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social market-analytics">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/12.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Acessórios</h4>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="{{ url_for('loja') }}"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 single-portfolio-item marketing-social ux-ui-design">
+                    <div class="single-portfolio-slide">
+                        <img src="{{ url_for('static',filename='/img/bg-img/4.jpg') }}" alt="">
+                        <!-- Overlay Effect -->
+                        <div class="overlay-effect">
+                            <h4>Kits</h4>
+                        </div>
+                        <!-- View More -->
+                        <div class="view-more-btn">
+                            <a href="{{ url_for('loja') }}"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
+{% endblock %}
